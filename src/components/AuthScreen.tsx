@@ -114,14 +114,6 @@ export function AuthScreen({
                 ? 'We’ll email you a link to choose a new password.'
                 : 'Sleep, symptoms, and the details you want to remember.'}
           </p>
-          {!supabase && (
-            <div className="preview-message">
-              <strong>Try tendline before connecting an account</strong>
-              <p>
-                Accounts are not connected yet. Try Demo mode below to explore the full app.
-              </p>
-            </div>
-          )}
           <form onSubmit={submit} className="stack">
             {!updating && (
               <label>
